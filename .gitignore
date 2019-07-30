@@ -1,0 +1,43 @@
+# logs
+*.log
+
+# OS
+.DS_Store
+
+# IDE
+.idea
+*.swp
+*.swo
+
+# compiled
+*.o
+*.s
+*.gcno
+*.gcda
+*.gcov
+fork-example
+tree-example
+kgarten
+mandel
+pthread-test
+execve-example
+prog
+prog-np
+scheduler
+scheduler-shell
+scheduler-shell-priors
+shell
+sigchld-example
+strace-test
+zing2_main_outcome
+zing_main_outcome
+ex2-fork
+ex2-signals
+ex2-1
+ex2-2
+ex2-3
+ex2-4
+tree-example
+fork-example
+simplesync-atomic
+simplesync-mutex
