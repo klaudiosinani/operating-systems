@@ -8,7 +8,7 @@
 
 ## Description
 
-The repository is home to the coding assignments of the 2017 Operating Systems course @ ECE NTUA.
+The repository is home to the coding assignments of the 2017 Operating Systems course @ Electrical & Computer Engineering - National Technical University of Athens.
 
 ## Contents
 
