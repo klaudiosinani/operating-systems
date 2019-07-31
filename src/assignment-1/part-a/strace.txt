@@ -1,0 +1,41 @@
+execve("./fconc", ["./fconc", "a", "d"], [/* 16 vars */]) = 0
+brk(0)                                  = 0x1554000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3047010000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23507, ...}) = 0
+mmap(NULL, 23507, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3047013000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3046830000
+mprotect(0x7f30469ea000, 2097152, PROT_NONE) = 0
+mmap(0x7f3046bea000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7f3046bea000
+mmap(0x7f3046bf0000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3046bf0000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3047000000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3046ff0000
+arch_prctl(ARCH_SET_FS, 0x7f3046ff0740) = 0
+mprotect(0x7f3046bea000, 16384, PROT_READ) = 0
+mprotect(0x601000, 4096, PROT_READ)     = 0
+mprotect(0x7f3046e22000, 4096, PROT_READ) = 0
+munmap(0x7f3047013000, 23507)           = 0
+open("fconc.out", O_WRONLY|O_CREAT|O_TRUNC, 0600) = 3
+open("a", O_RDONLY)                     = 4
+read(4, "hello\n", 100)                 = 6
+write(3, "hello\n", 6)                  = 6
+read(4, "", 100)                        = 0
+write(3, "", 0)                         = 0
+close(4)                                = 0
+open("d", O_RDONLY)                     = 4
+read(4, "shing\n", 100)                 = 6
+write(3, "shing\n", 6)                  = 6
+read(4, "", 100)                        = 0
+write(3, "", 0)                         = 0
+close(4)                                = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
